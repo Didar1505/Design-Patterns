@@ -1,0 +1,21 @@
+from abc import ABC, abstractmethod
+
+class FurnitureFactory(ABC):
+
+    @abstractmethod
+    def create_chair(self,):
+        pass
+
+    @abstractmethod
+    def create_table(self):
+        pass
+
+    @abstractmethod
+    def create_closet(self):
+        pass
+
+class ScandinavianFactory(FurnitureFactory):
+    pass
+
+class LoftFactory(FurnitureFactory):
+    pass
