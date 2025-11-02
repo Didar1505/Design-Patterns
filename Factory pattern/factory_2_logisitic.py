@@ -1,9 +1,8 @@
 from abc import ABC, abstractmethod
 
 class Transport(ABC):
-
     @abstractmethod
-    def deliver(self,package):
+    def deliver(self, package):
         pass
 
 class Truck(Transport):
@@ -18,7 +17,7 @@ class Logistics(ABC):
     @abstractmethod
     def create_transport(self) -> Transport:
         pass
-    
+
     def plan_delivery(self, package):
         print("Logistics: Планирую доставку...")
         transport = self.create_transport()
@@ -37,12 +36,5 @@ class SeaLogistics(Logistics):
 def client_code(logistics_creator:Logistics, package):
     logistics_creator.plan_delivery(package)
 
-print("--- Пример с Фабричным Методом ---")
-
-print("\nСценарий: Нужна доставка по земле.")
-road_logistics = RoadLogistics()
-client_code(road_logistics, "Коробка с электроникой")
-
-print("\nСценарий: Нужна доставка по морю.")
-sea_logistics = SeaLogistics()
-client_code(sea_logistics, "Большой контейнер")
+road_log = RoadLogistics()
+client_code(road_log, "Back of money")

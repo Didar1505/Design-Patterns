@@ -1,0 +1,16 @@
+{
+  "users": {
+    "didar": {
+      "role": "admin"
+    },
+    "tony": {
+      "role": "user"
+    },
+    "max": {
+      "role": "admin"
+    },
+    "arya": {
+      "role": "user"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "app_name": "InvoiceService",
+    "version": "1.0.0",
+    "database": {
+        "host": "localhost",
+        "port": 5432
+    },
+    "feature_flags": {
+        "enable_cache": true
+    },
+    "admins": []
+}
